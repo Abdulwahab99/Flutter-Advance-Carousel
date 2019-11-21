@@ -68,7 +68,7 @@ class _HomeScreenState extends State<HomeScreen> {
           value = (_pageController.page - index);
           value = (1 - (value.abs() * 1)).clamp(0.0, 1.0);
         }
-        print(value);
+        Future.delayed(Duration(seconds: 2));
         return Expanded(
           child: Transform.translate(
             offset: Offset(
